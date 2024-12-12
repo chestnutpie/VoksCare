@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voks Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+<style>
+  
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-image:url(counseling\ service\ page\ 1\ bg.png)
+}
+
+* {
+    text-decoration: none;
+}
+nav{
+    background: rgba(255, 255, 255);
+    width: 100%;
+    height: 92px;
+    position:-webkit-sticky;
+    border-top: 7px solid #4376b2;
+}
+nav img {
+    margin-left: 15px;
+    width: 190px;
+    height: 95px;
+}
+nav ul{
+    float:right;
+    display: flex;
+    list-style: none;
+}
+nav ul button{
+    background-color: transparent;
+    border-style: none;
+    margin-right: 20px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+nav ul button a{
+    color:black;
+    line-height: 20px; 
+    padding: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+        
+}
+nav ul button :hover{
+    font-size: 22px;
+    color: #4376b2
+
+}
+nav ul li a{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    line-height: 60px;
+    border-bottom: 5px solid #ffda7b
+}
+nav ul li img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    color: #fff;
+    
+}
+
+.hero p {
+    font-size: larger;
+    margin-top: none;
+    color: #000;
+}
+.hero-filled_content p{
+    font-family: "Mukta", sans-serif;
+}
+
+/*Cards of 8 Counselors*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Mukta", sans-serif;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.cards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  flex: 1;
+  justify-content: space-between;
+  gap: 43px;
+}
+
+.card {
+  background-color: #fff7e2;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color:#4376b2;
+  min-width: 8em;
+  min-height: 2em;
+  font-family: "Mukta", sans-serif;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  color: #555;
+  font-family: "Mukta", sans-serif;
+}
+
+.card button {
+  background-color: #8fd870;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.card button:hover {
+  background-color: #009519;
+}
+
+.how-does-it-work {
+  text-align: center;
+}
+.how-does-it-work h1 {
+  color:#2c4e75;
+  font-size: 3em;
+  font-family: "Jua", sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 234, 0, 0.447), 0 0 20px rgba(234, 255, 0, 0.533), 0 0 30px rgba(255, 255, 255, 0.464);
+  text-decoration: underline;
+}
+.how-does-it-work h3 {
+  color: black;
+  font-size: 1em;
+  font-family: "Mukta", sans-serif;
+  letter-spacing: 1px;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+
+/* Footer */
+footer {
+    
+    background-color: #ffd67b;
+    color: #545454;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+}
+
+.footer-column .footer-titles {
+    width: 170px;
+    height:60px;
+    text-align: left;
+    margin-top: 15px;
+}
+.footer-column .footer-titles2 {
+    width: 250px;
+    height:60px;
+    text-align: left;
+    margin-top: 15px;
+    margin-right: 40px;
+}
+
+.footer-column p {
+    text-align: left;
+    font-family: "Alata", sans-serif;
+    font-size: 14px;
+    margin-left: 50px;
+    letter-spacing: 1px;
+}
+.footer-column ul {
+    text-align: left;
+    font-family: "Alata", sans-serif;
+    font-size: 14px;
+    margin-left: 50px;
+    letter-spacing: 1px;
+}
+.footer-column a {
+    text-align: left;
+    font-family: "Alata", sans-serif;
+    font-size: 14px;
+}
+
+</style>
+<body>
+    <nav>
+        <img src="logo vokscare.png" width="120px" class="logo">
+        <ul>
+            <button> <a href="vokshome.html">Home</a></button>
+            <button> <a href="about us.html">About Us</a></button>
+            <button> <a href="counseling services.html">Counseling Services</a></button>
+            <button> <a href="articles.html">Articles</a></button>
+            <li> <a href="my account page (sign up).html">Log In/Sign Up</a></li>
+            <li> <img src="contact .png" alt="Icon" class="navbar-icon"></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <img src="cs page header.png" alt="cs header" class="header-cs">
+        </div>
+        <div class="hero-filled_content">
+            <p>Here are lists of our available counselor with their specialties.</p>
+        </div>
+    
+        <div class="container">
+            <div class="slider">
+                <div class="cards">
+                <!-- Counselor Cards -->
+                    <div class="card">
+                    <img src="profile1.jpg" alt="Counselor 1">
+                    <h3>Sheeryl Crystabel</h3>
+                    <p>Specialize in social anxiety and social issues.</p>
+                    <button onclick="bookSchedule('Sheeryl Crystabel')">Book a Schedule</button>
+                    </div>
+                    <div class="card">
+                    <img src="profile2.jpg" alt="Counselor 2">
+                    <h3>Sophia Bennet</h3>
+                    <p>Specialize in stress management and anxiety.</p>
+                    <button onclick="bookSchedule('Sophia Bennet')">Book a Schedule</button>
+                    </div>
+                    <div class="card">
+                    <img src="profile3.jpg" alt="Counselor 3">
+                    <h3>Ethan Reynolds</h3>
+                    <p>Specialize in career consultation and life transitions.</p>
+                    <button onclick="bookSchedule('Ethan Reynolds')">Book a Schedule</button>
+                    </div>
+                    <div class="card">
+                    <img src="profile4.jpg" alt="Counselor 4">
+                    <h3>Liam Foster</h3>
+                    <p>Specialize in relationship counseling.</p>
+                    <button onclick="bookSchedule('Liam Foster')">Book a Schedule</button>
+                    </div>
+                    <div class="card">
+                    <img src="profile5.jpg" alt="Counselor 5">
+                    <h3>Noah Graham</h3>
+                    <p>Specialize in ADHD and learning problems.</p>
+                    <button onclick="bookSchedule('Noah Graham')">Book a Schedule</button>
+                    </div>
+                    <div class="card">
+                    <img src="profile6.jpg" alt="Counselor 6">
+                    <h3>Olivia Carter</h3>
+                    <p>Specialize in family therapy.</p>
+                    <button onclick="bookSchedule('Olivia Carter')">Book a Schedule</button>
+                    </div>
+                    <div class="card">
+                    <img src="profile7.jpg" alt="Counselor 7">
+                    <h3>Emma Mitchell</h3>
+                    <p>Specialize in depression.</p>
+                    <button onclick="bookSchedule('Emma Mitchell')">Book a Schedule</button>
+                    </div>
+                    <div class="card">
+                    <img src="profile8.jpg" alt="Counselor 8">
+                    <h3>Maia Harper</h3>
+                    <p>Specialize in DBT Therapy</p>
+                    <button onclick="bookSchedule('Maia Harper')">Book a Schedule</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <div class="how-does-it-work">
+      <h1> How Does it Work?</h1>
+      <h3> 1. Log in/sign up first. <br> 2. Choose your preferred counselor by clicking the "Book a Schedule" button.<br> 3. After the page says "You have booked a schedule with (Counselor Name), we will contact you for further confirmation.</h3>
+    </div>
+    <footer>
+        <div class="footer-column">
+            <img src="vokscare hubungi kita.png" alt="hubungi kita" class="footer-titles">
+            <p>📧 Email: support@vokscare.com <br>📞 Telepon: +62 123 456 789<br> </p>
+        </div>
+        <div class="footer-column">
+            <img src="vokscare navigasi.png" alt="navigasi" class="footer-titles">
+            <ul>
+                <li><a href="vokshome.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="counseling services.html">Counseling Services</a></li>
+                <li><a href="articles.html">Articles</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <img src="vokscare ikuti kami.png" alt="ikuti kami" class="footer-titles">
+            <ul>
+            <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <img src="vokscare dukungan darurat.png" alt="dukungan darurat" class="footer-titles2">
+            <p>Jika Anda atau seseorang yang Anda kenal <br> membutuhkan bantuan segera,<br>
+                <br>hubungi hotline darurat terdekat atau<br> layanan darurat setempat.</p>
+        </div>
+    </footer>
+
+        <script src="script vokscare.js"></script>
+
+</body>
+</html>

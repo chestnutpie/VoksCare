@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoksCare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+<style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(about\ us\ bg.png);
+            color: #333;        
+        }
+
+        * {
+            text-decoration: none;
+        }
+        nav{
+        background: rgba(255, 255, 255);
+        width: 100%;
+        height: 92px;
+        position:-webkit-sticky;
+        border-top: 7px solid #4376b2;
+    }
+    nav img {
+        margin-left: 15px;
+        width: 190px;
+        height: 95px;
+    }
+    nav ul{
+        float:right;
+        display: flex;
+        list-style: none;
+    }
+    nav ul button{
+        background-color: transparent;
+        border-style: none;
+        margin-right: 20px;
+        border-radius: 60px;
+        cursor: pointer;
+    }
+
+    nav ul button a{
+        color:black;
+        line-height: 20px; 
+        padding: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+        
+    }
+    nav ul button :hover{
+        font-size: 22px;
+        color: #4376b2
+
+    }
+    nav ul li a{
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+        line-height: 60px;
+        border-bottom: 5px solid #ffda7b
+    }
+    nav ul li img{
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+    }
+    
+
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 5px 20px;
+            color: #fff;
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .hero-section p {
+            position: relative;
+            z-index: 2;
+            font-size: 18px;
+            font-family: "Mukta", sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .content-section {
+            padding: 0px 20px;
+
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.168); /* Slightly transparent white */
+            backdrop-filter: blur(5px); /* Add blur effect */
+            padding: 20px;
+            margin: 20px auto ;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: left;
+
+            /* Animation properties */
+            opacity: 0; /* Initially hidden */
+            transform: translateY(20px); /* Slightly below the final position */
+            animation: fadeInUp 0.8s ease-in-out forwards; /* Apply animation */
+        }
+
+        .content-box:nth-child(1) {
+    animation-delay: 0.3s; /* Delay for the first box */
+}
+
+.content-box:nth-child(2) {
+    animation-delay: 0.6s; /* Delay for the second box */
+}
+
+.content-box:nth-child(3) {
+    animation-delay: 0.9s; /* Delay for the third box */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+        .content-box h2 {
+            color: white;
+            margin-bottom: 10px;
+            margin-top: none;
+            font-family: "Jua", sans-serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        
+
+        .content-box h4, .content-box h3, .content-box p,
+        .content-box ul {
+            font-size: 16px;
+            color: #000000;
+            line-height: 1.4;
+            font-family: "Mukta", sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .content-box ul {
+            padding-left: 20px;
+        }
+
+        .founders {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .founder-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+        }
+
+        .founder-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            
+        }
+
+        .founder-card h3 {
+            font-size: 18px;
+            margin:  0px 5px;
+        }
+
+        .founder-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+    
+        background-color: #ffd67b;
+        color: #545454;
+        text-align: left;
+        width: 100%;
+        height: auto;
+        display:flex;
+        justify-content:space-around;
+        flex-wrap: wrap;
+    
+    }
+    
+    .footer-column .footer-titles {
+        width: 170px;
+        height:60px;
+        text-align: left;
+        margin-top: 15px;
+    }
+    .footer-column .footer-titles2 {
+        width: 250px;
+        height:60px;
+        text-align: left;
+        margin-top: 15px;
+        margin-right: 40px;
+    }
+   
+    .footer-column p {
+        text-align: left;
+        font-family: "Alata", sans-serif;
+        font-size: 14px;
+        margin-left: 50px;
+        letter-spacing: 1px;
+    }
+    .footer-column ul {
+        text-align: left;
+        font-family: "Alata", sans-serif;
+        font-size: 14px;
+        margin-left: 50px;
+        letter-spacing: 1px;
+    }
+    .footer-column a {
+        text-align: left;
+        font-family: "Alata", sans-serif;
+        font-size: 14px;
+    }
+    </style>
+
+<body>
+    <nav>
+        <img src="logo vokscare.png" width="120px" class="logo">
+        <ul>
+            <button> <a href="vokshome.html">Home</a></button>
+            <button> <a href="about us.html">About Us</a></button>
+            <button> <a href="counseling services.html">Counseling Services</a></button>
+            <button> <a href="articles.html">Articles</a></button>
+            <li> <a href="my account page (sign up).html">Log In/Sign Up</a></li>
+            <li> <img src="contact .png" alt="Icon" class="navbar-icon"></li>
+        </ul>
+    </nav>
+
+    <div class="hero-section">
+        <img src="about us header.png" class="aboutus-header">
+        <p>VoksCare adalah layanan yang menyediakan bantuan psikologis berupa peer counseling.</p>
+    </div>
+
+    <div class="content-section">
+        <div class="content-box">
+            <h2>Visi</h2>
+            <p>Menjadi layanan peer counseling terdepan yang mendukung kesehatan mental dan emosional masyarakat melalui dukungan empatik, inklusif, dan mudah diakses.</p>
+        </div>
+
+        <div class="content-box">
+            <h2>Misi</h2>
+            <ul>
+                <li>Memberikan ruang yang aman, rahasia, dan nyaman bagi individu untuk berbagi cerita dan emosi.</li>
+                <li>Memberdayakan individu dengan keterampilan koping dan strategi untuk menghadapi tantangan pribadi.</li>
+                <li>Mengedukasi masyarakat mengenai pentingnya kesehatan mental serta mendorong budaya saling dukung dan peduli.</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h2>Meet our Founders!</h2>
+            <div class="founders">
+                <div class="founder-card">
+                    <img src="profileanis.jpeg" alt="Founder 1">
+                    <h3>Anindita Annisa Koesoemo</h3>
+                    <h4>Web Designer</h4>
+                    <p>2406443605</p>
+                </div>
+                <div class="founder-card">
+                    <img src="profilesalma.jpeg" alt="Founder 2">
+                    <h3>Salma Agita Afifah</h3>
+                    <h4>Web Programmer</h4>
+                    <p>2406402795</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer-column">
+        <img src="vokscare hubungi kita.png" alt="hubungi kita" class="footer-titles">
+        <p>📧 Email: support@vokscare.com <br>📞 Telepon: +62 123 456 789<br> </p>
+    </div>
+    <div class="footer-column">
+        <img src="vokscare navigasi.png" alt="navigasi" class="footer-titles">
+        <ul>
+            <li><a href="vokshome.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="counseling services.html">Counseling Services</a></li>
+            <li><a href="articles.html">Articles</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <img src="vokscare ikuti kami.png" alt="ikuti kami" class="footer-titles">
+        <ul>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <img src="vokscare dukungan darurat.png" alt="dukungan darurat" class="footer-titles2">
+        <p>Jika Anda atau seseorang yang Anda kenal <br> membutuhkan bantuan segera,<br>
+            <br>hubungi hotline darurat terdekat atau<br> layanan darurat setempat.</p>
+    </div>
+</footer>
+</body>
+</html>
